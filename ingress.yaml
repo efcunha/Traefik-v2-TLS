@@ -1,0 +1,19 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: traefik
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    traefik.ingress.kubernetes.io/router.tls: "true"
+    traefik.ingress.kubernetes.io/router.tls.certresolver: default
+spec:
+  tls:
+    - secretName: traefik-cert
+  rules:
+    - host: traefik.<DOMINIO>
+      http:
+        paths:
+          - backend:
+              serviceName: traefik
+              servicePort: 80

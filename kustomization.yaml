@@ -1,0 +1,18 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- crd.yaml
+- cluster-role.yaml
+- cluster-role-binding.yaml
+- service-account.yaml
+- service.yaml
+- ingress.yaml
+- traefik-cert.yanl
+- traefik-conf.yanl
+
+namespace: kube-system
+
+commonLabels:
+  app: traefik
