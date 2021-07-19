@@ -15,7 +15,7 @@ cd Traefik-v2-TLS/
 ```
 - Alterar no arquivo ingress.yaml
 
-  - Linha 12: Colocar o endereço e dominio para o Traefik
+  - Linha 14: Colocar o endereço e dominio para o Traefik
 
 ```
 ```ssh
