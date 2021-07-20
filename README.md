@@ -11,11 +11,11 @@ O Traefik é a aplicação que iremos usar como ingress. Ele irá ficar escutand
 git clone https://github.com/efcunha/Traefik-v2-TLS.git
 ```
 ```	
-cd Traefik-v2.4/
+cd Traefik-v2-TLS/
 ```
 - Alterar no arquivo ingress.yaml
 
-  - Linha 12: Colocar o endereço e dominio para o Traefik
+  - Linha 14: Colocar o endereço e dominio para o Traefik
 
 ```
 ```ssh
