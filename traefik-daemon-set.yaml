@@ -65,6 +65,7 @@ spec:
         - --providers.kubernetesingress
 
         # Define two entrypoint ports, and setup a redirect from HTTP to HTTPS.
+        #- --entrypoints.traefik.address=:8080
         - --configfile=/config/traefik.toml
         - --entryPoints.web.address=:80
         - --entryPoints.websecure.address=:443
@@ -72,7 +73,7 @@ spec:
         - --entrypoints.web.http.redirections.entryPoint.scheme=https
         - --entrypoints.web.http.redirections.entrypoint.permanent=true
 
-        # hitting rate limits in production.
+        # Metricas e Logs
         - --accesslog=true
         - --log=true
         - --metrics=true

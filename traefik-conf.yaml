@@ -16,6 +16,7 @@ data:
           KeyFile = "/ssl/tls.key"
 kind: ConfigMap
 metadata:
+  creationTimestamp: "2021-07-19T15:56:33Z"
   managedFields:
   - apiVersion: v1
     fieldsType: FieldsV1
@@ -25,5 +26,9 @@ metadata:
         f:traefik.toml: {}
     manager: kubectl-create
     operation: Update
+    time: "2021-07-19T15:56:33Z"
   name: traefik-conf
   namespace: kube-system
+  resourceVersion: "1798093"
+  uid: feb5701d-6cde-448b-9e99-07d45adbf93f
+
