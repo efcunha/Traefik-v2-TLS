@@ -1,7 +1,7 @@
 apiVersion: v1
 data:
-  tls.crt: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUdIakNDQlFhZ0F3SUJBZ0l
-  tls.key: LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JSUpRZ0lCQURBTkJna3Foa2l
+  tls.crt: <Coloque seu certificado aqui>
+  tls.key: <Coloque o Key do seu certificado aqui>
 kind: Secret
 metadata:
   creationTimestamp: "2021-07-19T15:54:45Z"
