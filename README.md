@@ -32,6 +32,7 @@ cd Traefik-v2-TLS/
 ```ssh
 ./install-traefik.sh
 ```	
+```	
 kubectl --namespace=kube-system get pods
 ```
 Este repositório é baseado no:
