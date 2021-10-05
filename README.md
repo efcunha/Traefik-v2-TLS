@@ -17,13 +17,15 @@ cd Traefik-v2-TLS/
   - Adicionar nas linhas "tls.crt / tls.key" os sequintes valores conforme instruções abaixo.
     
     Observe que o campo tls.crt deve ter o valor que você obtém após executar o comando nos arquivos de seu certificados ssl:
-```ssh    
+```
     cat tls.crt | base64 -w0
 ```
+```
     Repita o mesmo comando para o campo tls.key:
-```ssh        
+```
     cat tls.key | base64 -w0 
-```        
+```
+```
 - Alterar no arquivo ingress.yaml
 
   - Linha 25: Colocar o endereço e dominio para o Traefik
