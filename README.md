@@ -43,18 +43,6 @@ https://traefik.io/blog/traefik-2-2-ingress/
 
 https://medium.com/@patrickeasters/using-traefik-with-tls-on-kubernetes-cb67fb43a948
 
-## Agradecimentos:
-
-Este material é baseado no curso:
-
-DevOps Ninja: Docker, Kubernetes e Rancher
-
-https://www.udemy.com/course/devops-mao-na-massa-docker-kubernetes-rancher
-
-https://github.com/jonathanbaraldi
-
-Digo de passagem um ótimo curso, recomendo que se tiver oportunidade faça, pois a parte dos extras é SHOW de bola.
-
 # License
 
 Copyright (c) 2014-2018 [Rancher Labs, Inc.](http://rancher.com)
