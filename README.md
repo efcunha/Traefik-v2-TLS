@@ -30,9 +30,7 @@ cd Traefik-v2-TLS/
 
 ```
 ```ssh
-kubectl apply -k .
-```	
-kubectl apply -f daemon-set.yaml
+./install-traefik.sh
 ```	
 kubectl --namespace=kube-system get pods
 ```
