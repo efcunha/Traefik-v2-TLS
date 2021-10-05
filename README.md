@@ -19,9 +19,9 @@ cd Traefik-v2-TLS/
     Observe que o campo tls.crt deve ter o valor que você obtém após executar o comando nos arquivos de seu certificados ssl:
 ```
     cat tls.crt | base64 -w0
-```
+
     Repita o mesmo comando para o campo tls.key:
-```
+
     cat tls.key | base64 -w0 
 ```
 - Alterar no arquivo ingress.yaml
