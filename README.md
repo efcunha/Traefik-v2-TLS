@@ -10,8 +10,8 @@ O Traefik é a aplicação que iremos usar como ingress. Ele irá ficar escutand
 ```ssh
 git clone https://github.com/efcunha/Traefik-v2-TLS.git
 ```
-cd Traefik-v2-TLS/
 ```
+cd Traefik-v2-TLS/
 ```
 - Alterar no arquivo traefik-cert.yaml
   - Adicionar nas linhas "tls.crt / tls.key" os sequintes valores conforme instruções abaixo.
@@ -20,11 +20,9 @@ cd Traefik-v2-TLS/
 ```
     cat tls.crt | base64 -w0
 ```
-```
     Repita o mesmo comando para o campo tls.key:
 ```
     cat tls.key | base64 -w0 
-```
 ```
 - Alterar no arquivo ingress.yaml
 
