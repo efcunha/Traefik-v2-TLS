@@ -27,7 +27,7 @@ spec:
         configMap:
           name: traefik-conf
       containers:
-      - image: traefik:v2.4
+      - image: traefik:v2.5.3
         name: traefik
         ports:
         - name: http
@@ -79,3 +79,4 @@ spec:
         - --metrics=true
         - --log.level=INFO
         - --metrics.prometheus=true
+

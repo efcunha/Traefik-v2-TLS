@@ -9,10 +9,10 @@ resources:
 - traefik-service-account.yaml
 - traefik-service.yaml
 - traefik-cert.yaml
-- traefik-conf.yaml
-- traefik-conf.yaml
 - traefik-daemon-set.yaml 
 - traefik-ingress.yaml
+
+kubectl create configmap traefik-conf --from-file=traefik.toml
 
 namespace: kube-system
 

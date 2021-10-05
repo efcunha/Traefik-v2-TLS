@@ -1,23 +1,12 @@
 ---
 apiVersion: traefik.containo.us/v1alpha1
-kind: Middleware
+kind: TLSStore
 metadata:
-  name: traefik-auth
+  name: default
   namespace: kube-system
 spec:
-  basicAuth:
-    namespace: kube-system
-    secret: traefik-auth
-
----
-apiVersion: v1
-kind: Secret
-type: Opaque
-metadata:
-  name: traefik-auth
-  namespace: kube-system
-data:
-  auth: YWRtaW46MzJaa0l5TC8=
+  defaultCertificate:
+    secretName: traefik-cert
 
 ---
 apiVersion: extensions/v1beta1
@@ -26,9 +15,6 @@ metadata:
   name: traefik
   namespace: kube-system
   annotations:
-    ingress.kubernetes.io/auth-type: basic
-    ingress.kubernetes.io/auth-secret: traefik-auth
-    ingress.kubernetes.io/auth-realm: "Authenticacao Requeridai"
     kubernetes.io/ingress.class: traefik
     traefik.ingress.kubernetes.io/router.tls: "true"
     traefik.ingress.kubernetes.io/router.tls.certresolver: default
