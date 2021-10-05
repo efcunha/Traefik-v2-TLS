@@ -1,7 +1,7 @@
 
-# Rancher Traefik v2.4.x - TLS -  Kubernetes K8s - Cluster HA
+# Rancher Traefik v2.5.x - TLS -  Kubernetes K8s - Cluster HA
 
-Traefik 2.4.x
+Traefik 2.5.x
 
 ### Traefik 
 
@@ -11,11 +11,22 @@ O Traefik é a aplicação que iremos usar como ingress. Ele irá ficar escutand
 git clone https://github.com/efcunha/Traefik-v2-TLS.git
 ```
 ```	
-cd Traefik-v2.4/
+cd Traefik-v2.-TLS/
 ```
+- Alterar no arquivo traefik-cert.yaml
+  - Adicionar nas linhas "tls.crt / tls.key" os sequintes valores conforme instruções abaixo.
+    
+    Observe que o campo tls.crt deve ter o valor que você obtém após executar o comando nos arquivos de seu certificados ssl:
+    
+    cat tls.crt | base64 -w0
+    
+    Repita o mesmo comando para o campo tls.key:
+    
+    cat tls.key | base64 -w0 
+    
 - Alterar no arquivo ingress.yaml
 
-  - Linha 12: Colocar o endereço e dominio para o Traefik
+  - Linha 25: Colocar o endereço e dominio para o Traefik
 
 ```
 ```ssh
