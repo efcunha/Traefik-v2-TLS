@@ -11,7 +11,7 @@ O Traefik é a aplicação que iremos usar como ingress. Ele irá ficar escutand
 git clone https://github.com/efcunha/Traefik-v2-TLS.git
 ```
 ```	
-cd Traefik-v2.-TLS/
+cd Traefik-v2-TLS/
 ```
 - Alterar no arquivo traefik-cert.yaml
   - Adicionar nas linhas "tls.crt / tls.key" os sequintes valores conforme instruções abaixo.
