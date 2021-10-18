@@ -28,7 +28,6 @@ cd Traefik-v2-TLS/
 
   - Linha 25: Colocar o endereço e dominio para o Traefik
 
-```
 ```ssh
 ./install-traefik.sh
 ```	
