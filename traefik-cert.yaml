@@ -1,0 +1,24 @@
+apiVersion: v1
+data:
+  # Please note that tls.crt field must have value that you get after execute command:
+  # cat tls.crt | base64 -w0
+  # Repeat the same command for tls.key field:
+  # cat tls.key | base64 -w0
+  tls.crt: <Certificado>
+  tls.key: <Certificado>
+kind: Secret
+metadata:
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        .: {}
+        f:tls.crt: {}
+        f:tls.key: {}
+      f:type: {}
+    manager: kubectl-create
+    operation: Update
+  name: traefik-cert
+  namespace: kube-system
+  type: Opaque
